@@ -9,7 +9,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 2, [[<immersiveen
 
 //HEB
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
-recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:plateSteel>, <ore:craftingToolSoftHammer>, <ore:plateSteel>], [<immersiveengineering:material:9>, <immersiveengineering:metal_decoration0:4>, <immersiveengineering:material:9>], [<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:plateElectrum>, <ore:craftingToolSoftHammer>, <ore:plateSteel>], [<immersiveengineering:material:9>, <immersiveengineering:metal_decoration0:4>, <immersiveengineering:material:9>], [<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateElectrum>]]);
 
 
 //REB
@@ -95,5 +95,10 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<gregtech:meta_item_1:2297>,<ore:
 
 //mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
-
-
+//REMOVE recycling recipes
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_decoration0:4>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_decoration0:5>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_decoration0:6>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_decoration0:7>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_device1:2>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_device1:3>);
