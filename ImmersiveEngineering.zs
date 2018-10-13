@@ -88,15 +88,12 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:metal:8>,<o
 mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:metal:8>,<ore:dustIron>,null,500,200, [<ore:dustCoke>], "Steel Working");
 
 
-
-
-
 //magnetization
-//crusted ord 2 magented iron dust
-mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:metal:8>,<ore:crushedMagnetite>,null,600,256, [<ore:dustCoke>*2], "Magnetization");
+//crusted ore 2 magented iron dust
+mods.immersiveengineering.ArcFurnace.addRecipe(<gregtech:meta_item_1:2297>,<ore:crushedMagnetite>*2,null,600,1024, [<ore:dustCoke>*2,<ore:dustGraniteBlack>*4], "Magnetization");
 
 
-
+//mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
 
 
