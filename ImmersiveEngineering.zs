@@ -102,3 +102,13 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_de
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_decoration0:7>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_device1:2>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal_device1:3>);
+
+
+//*******************
+//others
+//*******************
+
+//heater
+recipes.remove(<immersiveengineering:metal_device1:1>);
+
+recipes.addShaped(<immersiveengineering:metal_device1:1>, [[<ore:plateIron>, <immersiveengineering:connector>, <ore:plateIron>], [<ore:pipeLargeCopper>, <immersiveengineering:metal_decoration0>, <ore:pipeLargeCopper>], [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]]);
