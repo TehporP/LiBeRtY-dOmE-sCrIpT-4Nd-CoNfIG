@@ -331,3 +331,9 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:part:140>,
 //molecular assembler
 recipes.remove(<appliedenergistics2:molecular_assembler>);
 recipes.addShaped(<appliedenergistics2:molecular_assembler>, [[<ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>], [<appliedenergistics2:material:44>, <ore:workbench>, <appliedenergistics2:material:43>], [<ore:plateStainlessSteel>, <appliedenergistics2:quartz_glass>, <ore:plateStainlessSteel>]]);
+
+
+//oredict
+var GTquartz=<ore:gemCertusQuartz>;
+var AEquartz=<ore:crystalCertusQuartz>;
+AEquartz.addAll(GTquartz);
