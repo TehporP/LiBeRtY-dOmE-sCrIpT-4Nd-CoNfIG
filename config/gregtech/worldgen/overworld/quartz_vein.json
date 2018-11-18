@@ -14,15 +14,15 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 25,
+          "weight": 45,
           "value": "ore:quartzite"
         },
         {
-          "weight": 30,
+          "weight": 25,
           "value": "ore:barite"
         },
 		{
-          "weight": 40,
+          "weight": 30,
           "value": "ore:certus_quartz"
         }
       ]
