@@ -17,7 +17,7 @@
                     "name":"galacticraftcore:basic_block_moon",
                     "metadata": 4
                 },
-                "cluster-size": 175,
+                "cluster-size": 100,
                 "type": "large-vein"
             },
 			"cluster-count": 1,
