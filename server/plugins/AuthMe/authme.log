@@ -1,0 +1,21 @@
+[12-08 00:04:39]: [INFO] Created column 'regdate' and set the current timestamp, 1544198679317, to all 0 rows
+[12-08 00:04:39]: [INFO] SQLite Setup finished
+[12-08 00:04:39]: [INFO] Hooked into LuckPerms!
+[12-08 00:04:40]: [INFO] Hooked successfully into Essentials
+[12-08 00:04:40]: [INFO] Essentials spawn file not found: 'C:\Users\TehporP\Desktop\server\plugins\Essentials\spawn.yml'
+[12-08 00:04:40]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[12-08 00:04:41]: [INFO] Development builds are available on our jenkins, thanks to f14stelt.
+[12-08 00:04:41]: [INFO] Do you want a good game server? Look at our sponsor GameHosting.it leader in Italy as Game Server Provider!
+[12-08 00:04:41]: [INFO] AuthMe 5.4.0 build n.1877 correctly enabled!
+[12-08 00:06:51]: [INFO] AuthMe 5.4.0-b1877 disabled!
+[12-08 00:09:17]: [INFO] SQLite Setup finished
+[12-08 00:09:17]: [INFO] Hooked into LuckPerms!
+[12-08 00:09:18]: [INFO] [LICENSE] This product uses data from the GeoLite API created by MaxMind, available at http://www.maxmind.com
+[12-08 00:09:18]: [INFO] Hooked successfully into Essentials
+[12-08 00:09:18]: [INFO] Essentials spawn file not found: 'C:\Users\TehporP\Desktop\server\plugins\Essentials\spawn.yml'
+[12-08 00:09:18]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[12-08 00:09:18]: [INFO] Development builds are available on our jenkins, thanks to f14stelt.
+[12-08 00:09:18]: [INFO] Do you want a good game server? Look at our sponsor GameHosting.it leader in Italy as Game Server Provider!
+[12-08 00:09:18]: [INFO] AuthMe 5.4.0 build n.1877 correctly enabled!
+[12-08 00:14:34]: [FINE] tester logged in!
+[12-08 00:14:34]: [FINE] tester registered 127.0.0.1
