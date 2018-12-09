@@ -1,0 +1,337 @@
+#领地插件配置文件2.8.0.0 重制 By: 喵♂呜(部分汉化来自宝石汉化组 大刘,Zesty).
+Global:
+    # 载入的语言文件
+    Language: Chinese
+    # 圈地工具ID(默认是|木锄-290|)(木斧是271)
+    SelectionToolId: 290
+    # 查看工具ID(默认是线)
+    InfoToolId: 287
+    # 运动检查间隔,以毫秒为单位.
+    # 数值越小,对服务器负担越大.
+    # 增加数值会导致玩家在被强制传送前进入禁止移动区域.
+    MoveCheckInterval: 500
+    # 数据保存间隔(单位: 分)
+    SaveInterval: 10
+    # 默认权限组
+    DefaultGroup: default
+    # 是否启用'出租'系统
+    UseLeaseSystem: false
+    # 出租系统检查间隔(单位: 分)
+    LeaseCheckInterval: 10
+    # 允许出租系统自动续租,只要玩家有足够的资金.如果经济系统被禁用,这个设置将无效.
+    LeaseAutoRenew: true
+    # 使用权限系统.
+    EnablePermissions: true
+    # 设置为'true'如果不使用 Permissions 或 PermissionsBukkit, 或使用旧版 Permissions.
+    LegacyPermissions: false
+    # 使用/禁用领地的经济系统 (支持 Vault 所支持的所有经济插件).
+    EnableEconomy: true
+    # 使用/禁用领地'租用'系统
+    EnableRentSystem: false
+    # 以分钟为单位,领地租用到期检测间隔 (如果开启了领地租用系统).
+    RentCheckInterval: 10
+    # 使用/禁用领地内聊天频道.
+    ResidenceChatEnable: true
+    # 设置为true启动ActionBar 仅限 1.8 以上.
+    # 设置为false将显示消息在聊天窗口.
+    UseActionBar: true
+    # 领地频道聊天颜色.
+    ResidenceChatColor: DARK_PURPLE
+    # 是否只有OP或者拥有 'residence.admin' 权限的玩家创建/修改/删除领地(启用后普通玩家将无法使用领地命令).
+    AdminOnlyCommands: false
+    # 设置为'true'让OP具有领地管理员权限.
+    AdminOPs: true
+    # 多世界插件的名称设置, 如果你没有多世界插件,你可忽略这个.
+    # 这样做是确保多世界插件在领地插件前开启,以确保其他世界的领地正确读取. 
+    # 可选项: Multiverse-Core MultiWorld 或者别的插件(区分大小写)
+    MultiWorldPlugin: Multiverse-Core 
+    # 设置为'true'可以使'领地子区域'继承 领地 当前的flag设置.
+    ResidenceFlagsInherit: true
+    # 设置为'false'则允许出租的领地可被租用的玩家修改.
+    PreventRentModify: true
+    # 设置为'false'将造成即使在保存文件时检测到错误,领地插件也会继续加载.
+    StopOnSaveFault: true
+    # 领地名称字符过滤,Google搜索 "Java正则表达式" 可以了解它是如何工作.
+    ResidenceNameRegex: '[^A-Za-z0-9\u4e00-\u9fa5\-\_]'
+    # 设置为'true'将会 当每次租用到期或出租期满,都会发送给控制台一个信息.
+    ShowIntervalMessages: false
+    # 实验 - 以下设置块的ID列表将作为检查的“箱子”和“使用”标志的使用,当使用MOD自定义箱子和物品时.
+    CustomContainers: []
+    CustomBothClick: []
+    CustomRightClick: []
+    # 这个是世界flag,不在领地中时.
+    Flags:
+        Global: #下面这些为世界总体默认flag设置, 这会覆盖各个组的设置.
+            use: true
+            build: true
+            ignite: true
+            firespread: true
+            damage: true
+            creeper: true
+            tnt: true
+            pvp: true
+            move: false
+        WorldNameHere: #这里你可以设定个人的世界，这些覆盖总体的flag
+            #build: true
+    # 这个是所有人可以设置的权限true为允许设置false为不允许.
+    FlagPermission:
+        move: true
+        build: true
+        place: true
+        destroy: true
+        use: true
+        container: true
+        pvp: true
+        tp: true
+        ignite: true
+        firespread: true
+        bucket: true
+        flow: true
+        lavaflow: true
+        waterflow: true
+        creeper: true
+        tnt: true
+        monsters: true
+        animals: true
+        subzone: true
+        healing: true
+        piston: true
+        diode: true
+        lever: true
+        button: true
+        door: true
+        table: true
+        enchant: true
+        brew: true
+        bed: true
+        cake: true
+        note: true
+        trample: false
+        burn: true
+        explode: false
+        fireball: true
+        # 以下为新增Flag(交互Flag)
+        interact: true
+        # 以下为领地飞行的Flag
+        fly: true
+        # 以下为领地扩展的Flag
+        animalkilling: true
+        # 以下扩展的Flag暂未启用
+        zombie: true
+        skeleton: true
+        creeperspawn: true
+        spider: true
+        cavespider: true
+        slime: true
+        ghast: true
+        blaze: true
+        magmacube: true
+        silverfish: true
+        snowgolem: true
+        irongolem: true
+        enderman: true
+        chicken: true
+        cow: true
+        wolf: true
+        mooshroom: true
+        ocelot: true
+        zombiepigmen: true
+        pig: true
+        sheep: true
+        squid: true
+        villager: true
+        bat: true
+        witch: true
+        witherspawn: true
+        melt: true
+        form: true
+        mobkilling: true
+        drops: true
+        pickup: true
+        commands: true
+        enderpearl: true
+        falldamage: true
+        portal: true
+        villagerkilling: true
+        vehicleprotect: true
+        lightning: true
+        grow: true
+        hunger: true
+        sprint: true
+        fishing: true
+        eggs: true
+        sneak: true
+        pigzap: true
+        slimesplit: true
+        shear: true
+        pigsaddle: true
+        trade: true
+        god: true
+        day: true
+        night: true
+        weather: true
+        blockdamage: true
+    # 这是领地创建后默认设置.
+    ResidenceDefault:
+        build: false
+        use: false
+        container: false
+        pvp: false
+        tnt: false
+        creeper: false
+        flow: false
+        piston: false
+        ignite: false
+        firespread: false
+        move: false
+        flow: true
+        # 以下为新增Flag(交互Flag)
+        interact: false
+        # 以下为领地飞行的Flag
+        fly: false
+        # 以下为领地扩展的Flag
+        animalkilling: false
+        villagerkilling: false
+    # 这是领地创建后 拥有者 的flag.
+    CreatorDefault:
+        build: true
+        move: true
+        use: true
+        ignite: true
+        container: true
+        # 以下为新增Flag(交互Flag)
+        interact: true
+        # 以下为领地飞行的Flag
+        fly: true
+        # 以下为领地扩展的Flag
+        animalkilling: true
+        villagerkilling: true
+     # 这是默认组，适用于任何组的用户领地flag.
+    GroupDefault:
+        #default: #group name
+            #build: true
+    
+# 这些用户组相当于 '<worldname>.yml的Permissions groups.
+Groups:
+    Default: #用户组名称
+        # 有关玩家可以定义的信息.
+        # 去除下面的'#'可以镜像复制此配置到其他组.
+        #Mirror:
+          #- 'group1'
+          #- 'group2'
+        Residence:
+            # 玩家是否可以创建领地.这个设置可被 'residence.create' 权限覆盖.
+            CanCreate: true
+            # 玩家允许拥有最大领地数.
+            MaxResidences: 4
+            # 一个领地的最大物理区域数目.
+            MaxAreasPerResidence: 2
+            # 一个领地在东西方向最大距离 (X坐标).
+            MaxEastWest: 64
+            # 一个领地在南北方向最大距离 (Z坐标).
+            MaxNorthSouth: 64
+            # 一个领地在上下方向最大高度 (Y坐标).
+            MaxUpDown: 256
+            # 允许创建领地的最低高度.
+            MinHeight: 0
+            # 允许创建领地的最高高度.
+            MaxHeight: 255
+            # 子区域领地最大深度.
+            # 当一个领地子区域包含另一个子区域时,最大深度为2.
+            # 设置为0将禁用领地子区域.
+            SubzoneDepth: 3
+            # 是否允许传送
+            CanTeleport: true
+            # 是否允许使用'/res unstuck'命令, 当你卡在领地内时可以传送出去
+            Unstuck: true
+            # 是否允许使用'/res select '命令, 如果禁用,那么只能使用工具选取领地.
+            SelectCommandAccess: false
+            # 领地主人是否允许使用 黑名单/屏蔽列表 .
+            ItemListAccess: true
+        # 进入和离开领地时的消息设置.
+        Messaging:
+            #玩家是否可以改变领地进出提示.
+            CanChange: true
+            # 这个文本是当前用户组新建领地后的默认进入信息.
+            # 消息留空将禁用信息.
+            DefaultEnter: '欢迎 %player 来到 %owner 的领地 %residence.'
+            # 这个文本是当前用户组新建领地后的默认离开信息.
+            # 消息留空将禁用信息.
+            DefaultLeave: '你离开了 %owner 的领地 %residence.'
+        # 有关出租系统的设置.
+        Lease:
+            # 可出租最大天数.
+            MaxDays: 16
+            # 当使用 '/res lease renew' 命令时可续租多少天.
+            RenewIncrement: 14
+        # 有关租用系统的设置
+        Rent:
+            # 决定一次可以租用多少个领地
+            MaxRents: 3
+            # 决定玩家一次可以设置为出租的领地个数
+            MaxRentables: 3
+        # 有关领地经济系统的设置.
+        Economy:
+            # 是否可以购买出售中的领地.
+            CanBuy: true
+            # 是否可以出售领地.
+            CanSell: false
+            # 在购买领地时,是否忽略领地限制.
+            IgnoreLimits: false
+            # 创建一个新领地或添加物理区域时的每个方块大小花费.
+            BuyCost: 0.05
+            # 出租领地时每个方块大小花费 (如果出租系统开启).
+            RenewCost: 0.02
+        # Flag检查顺序:
+        # 1: Player           玩家
+        # 2: Group            用户组
+        # 3: Owner            拥有者
+        # 4: 如果其他都未定义将使用默认(一般是true).
+        # Flag 的权限默认是 false.
+        # 这些 flag 设置覆盖总体设置.
+        Flags:
+            # 特别允许或拒绝这个组权限的Flag.
+            Permission:
+                #build: true
+            # 特指为这个组的成员在领地内是否可以进行建造的Flag.
+            Default:
+                #build: true
+            # 特指领地的创建者在领地内是否可以进行建造的Flag.
+            CreatorDefault:
+                #build: true
+            # 特指其他组的成员在领地内是否可以进行建造的Flag.
+            GroupDefault:
+                #default: #组名
+                    #build: false
+            # 这些Flag将应用于这个组, 当他们在领地之外时将会被使用.
+            # 这些Flag将会覆盖上面的Flag, 均为全局选项.
+            World:
+                  Global: # 这些Flag将会应用于所有世界.
+                      #build: false
+                  WorldNameHere: # 或者你也可以单独设置每个世界的情况.
+                      #build: false
+# 你可以手动设定组里一个玩家的情况, 这将覆盖他所在组的权限.
+GroupAssignments:
+    bekvon: default
+    player: default
+
+ItemList: #在这里你可以建立黑名单/白名单.
+    DefaultList: #列表的名称并不重要,只要它是唯一的.最好使用一个描述性的名称.
+        # 列表类型, 可以是黑名单, 白名单, 或屏蔽列表.
+        Type: blacklist
+        # 如果你想的话, 你可以将此列表只应用到一个世界上, 否则将会应用到所有世界中.
+        #World: world
+        # 你也可以将此列表只应用到一个组里, 否者将会应用到所有组中.
+        #Group: default
+        # 此列表是允许或禁止的材料名称的列表
+        # 你可以通过在游戏里输入命令'/res material <id>' 查询材料名称的物品ID
+        #另外, 你也可以在列表中输入物品ID, 但是这将使其难以辨别并且难以直接查询列表中的物品的启用或禁止情况
+        Items: 
+           - 'BEDROCK'
+           - 'LAVA'
+           - 'WATER'
+           - 'STATIONARY_LAVA'
+           - 'STATIONARY_WATER'
+           - 'MOB_SPAWNER'
+# 这个是用来判断领地插件config.yml修订版本的,不要修改.
+ResidenceVersion: 2

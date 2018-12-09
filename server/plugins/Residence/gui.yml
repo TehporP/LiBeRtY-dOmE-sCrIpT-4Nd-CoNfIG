@@ -1,0 +1,282 @@
+Version: 1.0
+
+#是否开启领地GUI
+Enable: true
+# 图形化界面的按钮显示
+GUI:
+  setTrue:
+    id: 35
+    data: 13
+  setFalse:
+    id: 35
+    data: 14
+  setRemove:
+    id: 35
+    data: 8
+  PrevInfoPage: '&2<<< &e前一页 &2|'
+  NextInfoPage: '&2| &e后一页 &2>>>'
+  Set:
+    Title: '&3%s 领地权限'
+  Pset:
+    Title: '&3%s 的 %s 领地权限'
+  Actions:
+  - '&b左键 &a开启权限'
+  - '&b右键 &c关闭权限'
+  - '&bShift + 左键 &4移除权限'
+# Flag标记图形
+FlagGUI:
+  animalkilling:
+    des: 
+    - '动物击杀'
+    id: 365
+    data: 0
+  animals:
+    des: 
+    - '动物生成'
+    id: 383
+    data: 90
+  bed:
+    des: 
+    - '睡觉'
+    id: 355
+    data: 0
+  brew:
+    des: 
+    - '酿造台'
+    id: 379
+    data: 0
+  bucket:
+    des: 
+    - '水桶'
+    id: 325
+    data: 0
+  build:
+    des: 
+    - '建筑'
+    id: 45
+    data: 0
+  burn:
+    des: 
+    - '燃烧'
+    id: 50
+    data: 0
+  button:
+    des: 
+    - '按钮'
+    id: 143
+    data: 0
+  cake:
+    des: 
+    - '蛋糕'
+    id: 354
+    data: 0
+  canimals:
+    des: 
+    - '创造动物'
+    id: 383
+    data: 91
+  chat:
+    des: 
+    - '聊天'
+    id: 386
+    data: 0
+  cmonsters:
+    des: 
+    - '创造怪物'
+    id: 383
+    data: 50
+  command:
+    des: 
+    - '命令'
+    id: 137
+    data: 0
+  container:
+    des: 
+    - '使用容器'
+    id: 342
+    data: 0
+  creeper:
+    des: 
+    - '苦力怕爆炸'
+    id: 383
+    data: 50
+  destroy:
+    des: 
+    - '摧毁建筑'
+    id: 121
+    data: 0
+  diode:
+    des: 
+    - '红石比较器'
+    id: 356
+    data: 0
+  door:
+    des: 
+    - '门'
+    id: 324
+    data: 0
+  enchant:
+    des: 
+    - '暂无描述'
+    id: 116
+    data: 0
+  explode:
+    des: 
+    - '爆炸'
+    id: 407
+    data: 0
+  fireball:
+    des: 
+    - '火球'
+    id: 385
+    data: 0
+  firespread:
+    des: 
+    - '火蔓延'
+    id: 377
+    data: 0
+  flow:
+    des: 
+    - '水流'
+    id: 111
+    data: 0
+  healing:
+    des: 
+    - '治疗'
+    id: 373
+    data: 0
+  ignite:
+    des: 
+    - '打火石'
+    id: 259
+    data: 0
+  lavaflow:
+    des: 
+    - '岩浆蔓延'
+    id: 327
+    data: 0
+  leash:
+    des: 
+    - '使用栓绳'
+    id: 420
+    data: 0
+  lever:
+    des: 
+    - '开关'
+    id: 69
+    data: 0
+  mobkilling:
+    des: 
+    - '击杀怪物'
+    id: 367
+    data: 0
+  monsters:
+    des: 
+    - '生成怪物'
+    id: 52
+    data: 0
+  move:
+    des: 
+    - '移动'
+    id: 301
+    data: 0
+  nanimals:
+    des: 
+    - '暂无描述'
+    id: 383
+    data: 92
+  nmonsters:
+    des: 
+    - '暂无描述'
+    id: 383
+    data: 51
+  nofly:
+    des: 
+    - '不许飞行'
+    id: 171
+    data: 1
+  nomobs:
+    des: 
+    - '不生成怪物'
+    id: 166
+    data: 0
+  note:
+    des: 
+    - '音符盒'
+    id: 25
+    data: 0
+  piston:
+    des: 
+    - '活塞'
+    id: 33
+    data: 0
+  place:
+    des: 
+    - '放置方块'
+    id: 169
+    data: 0
+  pvp:
+    des: 
+    - '暂无描述'
+    id: 268
+    data: 0
+  sanimals:
+    des: 
+    - '暂无描述'
+    id: 383
+    data: 101
+  shear:
+    des: 
+    - '剪羊毛'
+    id: 359
+    data: 0
+  smonsters:
+    des: 
+    - '暂无描述'
+    id: 383
+    data: 54
+  subzone:
+    des: 
+    - '子领地'
+    id: 160
+    data: 7
+  table:
+    des: 
+    - '工作台'
+    id: 58
+    data: 0
+  tnt:
+    des: 
+    - 'TNT'
+    id: 46
+    data: 0
+  tp:
+    des: 
+    - '传送'
+    id: 120
+    data: 0
+  trade:
+    des: 
+    - '交易'
+    id: 388
+    data: 0
+  trample:
+    des: 
+    - '踩踏'
+    id: 3
+    data: 0
+  use:
+    des: 
+    - '使用'
+    id: 70
+    data: 0
+  vehicledestroy:
+    des: 
+    - '摧毁矿车'
+    id: 328
+    data: 0
+  waterflow:
+    des: 
+    - '水流动'
+    id: 326
+    data: 0

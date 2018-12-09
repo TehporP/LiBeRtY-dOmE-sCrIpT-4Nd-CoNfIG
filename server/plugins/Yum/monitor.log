@@ -1,0 +1,9 @@
+2018-12-9 18:37:23[Yum 能耗监控] 注意! 插件 LuckPerms 处理 PlayerLoginEvent 事件 耗时 63ms 平均耗时 63ms!
+2018-12-9 18:37:26[Yum 能耗监控] 注意! 插件 EssentialsXMPP 处理 PlayerJoinEvent 事件 耗时 27ms 平均耗时 27ms!
+2018-12-9 18:37:26[Yum 能耗监控] 注意! 插件 Residence 处理 PlayerJoinEvent 事件 耗时 47ms 平均耗时 47ms!
+2018-12-9 18:39:06[Yum 能耗监控] 注意! 玩家 CONSOLE 执行 Yum 插件 yum del EssentialsXMPP 命令 耗时 1532ms 平均耗时 102ms!
+2018-12-9 18:45:23[Yum 能耗监控] 注意! 插件 CoreProtect 处理 BlockFromToEvent 事件 耗时 31ms 平均耗时 31ms!
+2018-12-9 18:55:34[Yum 能耗监控] 注意! 插件 LuckPerms 处理 PlayerLoginEvent 事件 耗时 39ms 平均耗时 39ms!
+2018-12-9 18:55:37[Yum 能耗监控] 注意! 插件 Vault 处理 PlayerJoinEvent 事件 耗时 45ms 平均耗时 45ms!
+2018-12-9 18:55:37[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 32ms 平均耗时 32ms!
+2018-12-9 19:46:00[Yum 能耗监控] 注意! 玩家 CONSOLE 执行 Yum 插件 yum re Residence 命令 耗时 2153ms 平均耗时 270ms!

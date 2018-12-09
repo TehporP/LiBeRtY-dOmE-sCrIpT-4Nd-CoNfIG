@@ -1,0 +1,90 @@
+Version: 1.8
+
+#超级工具(OP可以用该工具在创造模式打破所有商店)
+superitem: GOLD_AXE
+#阻止漏斗吸取商店物品(非特殊情况不要开启)
+preventhopper: false
+#商店GUI的标题
+guititle: '&6[&b快捷商店&6]&r'
+#启用魔改库支持
+usemagiclib: true
+#启用虚拟悬浮物
+fakeitem: true
+#禁止使用商店的世界(请全部小写)
+prevent:
+- 'preventworld'
+
+#税收数量 (decimal) - 例如 税收是0.05 玩家1 在玩家2的商店 购买了 50元的东西,那么,玩家1 减少 50, 玩家2 账户增加(1-0.05)*50, 并且 玩家2税收账户增加 (0.05)*50.
+tax: 0.00
+#税收账户名称
+tax-account: tax
+#是否显示税收额度
+show-tax: false
+
+#是否需要记录玩家操作 保存在 服务器根目录\Plugins\QuickShop\qs.log?
+log-actions: true
+
+#数据库配置
+database:
+    mysql: false
+    host: localhost
+    port: 3306
+    database: quickshop
+    user: root
+    password: passwd
+    
+#限制玩家同一时间最多可以建造的商店
+limits:
+    #关闭则忽略限制
+    use: false
+    #默认限制
+    default: 10
+    #如果玩家有以下权限则拥有对应的数量
+    ranks:
+        #例如有 'quickshop.vip' 权限, 可以创建20个商店
+        quickshop.vip: 20
+
+#下列列表允许玩家创建商店
+#箱子已经默认添加了
+#他只能工作在继承于 InventoryHolder 的方块上面
+#换句话说就是 末影箱不行 泥土不行 石头也不行 等等...
+#而且不要尝试写入有行为操作的方块
+#例如漏斗 (他会把悬浮物吸进去)
+#例如酿造台 (他不能放置所有物品)
+#例如发射器/投掷器 (他不能被保护 当有红石的时候)
+#注意: 所有非法方块将在下一次载入到服务器时被清理
+shop-blocks:
+    - CHEST
+    - TRAPPED_CHEST
+
+shop:
+    #创建商店需花费
+    cost: 0
+    #是否需要再次扣费 当玩家 删除/移除/破坏 商店的时候?
+    refund: false
+
+    #是否需要在玩家修改商店价格的时候扣费
+    price-change-requires-fee: false
+    #玩家修改商店价格时的扣费金额
+    fee-for-price-change: 0
+
+    #是否需要锁定箱子防止其他玩家破坏
+    lock: true
+    #是否需要玩家按住Shift才可以创建或交易?
+    sneak-to-create: false
+    sneak-to-trade: false
+    
+    #是否需要自动创建木牌在箱子上?
+    auto-sign: true
+    #是否给无限商店的店主支付金钱
+    pay-unlimited-shop-owners: false
+    #是否显示悬浮物品(拔刀剑MOD必须关闭)
+    display-items: true
+    #当使用 /qs find <item>, 能查找多远的商店?
+    #这个命令可能会使服务器Lag 请谨慎调整数据...
+    #如果半径 > 100 可能会导致服务器崩溃. 请不要尝试, 不然你哭都来不及.
+    find-distance: 45
+
+#物品的黑名单. 使用 quickshop.bypass.<itemID> 权限可以忽略限制
+blacklist:
+    - 7 #Bedrock
