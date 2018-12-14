@@ -1,0 +1,41 @@
+{
+    "populate": {
+        "CrFe": {
+            "distribution": "fractal",
+            "generator": {
+                "block": [
+                    {
+                        "name": "gregtech:ore_chromite_0",
+                        "metadata":2,                      
+                        "weight": 40
+                    },
+                    {
+                        "name": "gregtech:ore_magnetite_0",
+                        "weight": 60
+                    }                    
+                ],
+                "material": {
+                    "name":"galacticraftplanets:mars",
+                    "metadata": 9
+                },
+                "cluster-size": 125,
+                "type": "large-vein"
+            },
+			"cluster-count": 1,
+			"chunk-chance": 12,
+            "min-height": 32,
+            "vein-height": 10,
+            "vein-diameter": 5,
+            "vertical-density": 20,
+            "horizontal-density": 2,
+            "retrogen": "false",
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    -29
+                ]
+            }
+        }
+    }
+}

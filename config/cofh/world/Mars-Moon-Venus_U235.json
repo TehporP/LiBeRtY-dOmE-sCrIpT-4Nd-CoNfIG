@@ -1,32 +1,27 @@
 {
     "populate": {
-        "TiFe": {
+        "U235": {
             "distribution": "fractal",
             "generator": {
                 "block": [
                     {
-                        "name": "galacticraftcore:basic_block_core",
-                        "metadata": 12,                       
-                        "weight": 10
+                        "name": "gregtech:ore_uraninite_0",                      
+                        "weight": 40
                     },
                     {
-                        "name": "minecraft:iron_ore",
-                        "weight": 25
-                    },
-                    {
-                        "name": "gregtech:ore_ilmenite_0",
-                        "weight": 65
+                        "name": "gregtech:ore_uranium_0",
+                        "weight": 60
                     }                    
                 ],
                 "material": {
-                    "name":"galacticraftcore:basic_block_moon",
-                    "metadata": 4
+                    "name":"galacticraftplanets:mars",
+                    "metadata": 9
                 },
-                "cluster-size": 175,
+                "cluster-size": 105,
                 "type": "large-vein"
             },
 			"cluster-count": 1,
-			"chunk-chance": 8,
+			"chunk-chance": 16,
             "min-height": 32,
             "vein-height": 10,
             "vein-diameter": 5,
@@ -37,7 +32,7 @@
             "dimension": {
                 "restriction": "whitelist",
                 "value": [
-                    -28
+                    -29
                 ]
             }
         }
