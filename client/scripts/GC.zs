@@ -169,7 +169,7 @@ recipes.addShaped(<galacticraftplanets:item_basic_asteroids:7>, [[<ore:plateSili
 
 //换气扇
 recipes.remove(<galacticraftcore:air_fan>);
-recipes.addShapeless(<galacticraftcore:air_fan>, [<ore:craftingToolHardHammer>, <gregtech:meta_item_2:18184>]);
+recipes.addShapeless(<galacticraftcore:air_fan>, [ <gregtech:meta_tool:6>, <gregtech:meta_item_2:18184>]);
 
 //罐
    metal_bender.recipeBuilder()

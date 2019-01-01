@@ -5,7 +5,7 @@ var assembler= mods.gregtech.recipe.RecipeMap.getByName("assembler");
 assembler.recipeBuilder().inputs(<gregtech:meta_item_1:12095> * 8).property("circuit", 8).outputs(<gregtech:machine_casing:10>).duration(50).EUt(32).buildAndRegister();
 extractor.recipeBuilder().inputs(<minecraft:stone> * 1).outputs(<minecraft:dirt> * 1).duration(40).EUt(32).buildAndRegister();
 // Harder Bronze casing casting
-mods.tconstruct.Casting.addBasinRecipe(<gregtech:machine_casing:10>, <gregtech:frame_4:2>, <liquid:bronze>, 1152, true, 320);
+mods.tconstruct.Casting.addBasinRecipe(<gregtech:machine_casing:10>,<gregtech:frame_1:13>, <liquid:bronze>, 1152, true, 320);
 
 recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "concrete", Amount: 1000}), [[<ore:sand>, <ore:dustBrick>, <ore:sand>], [<ore:dustClay>, <ore:bucketWater>.giveBack(<minecraft:bucket>), <ore:dustCalcite>], [<ore:sand>, <ore:dustBrick>, <ore:sand>]]);
 //GT BF Nerf
@@ -19,3 +19,7 @@ recipes.remove(<botania:terrapick>);
 recipes.remove(<botania:altar>);
 recipes.remove(<botania:lexicon>);
 recipes.remove(<gregtech:metal_casing:1>);
+
+//bug fixing
+recipes.remove(<minecraft:iron_door>);
+recipes.addShaped(<minecraft:iron_door>, [[<ore:plateIron>, <ore:plateIron>, null], [<ore:plateIron>, <ore:plateIron>, <gregtech:meta_tool:6>], [<ore:plateIron>, <ore:plateIron>, null]]);

@@ -10,6 +10,7 @@ var mixer=mods.gregtech.recipe.RecipeMap.getByName("mixer");
 var autoclave=mods.gregtech.recipe.RecipeMap.getByName("autoclave");
 var macerator=mods.gregtech.recipe.RecipeMap.getByName("macerator");
 //REMOVE OLD RECIPES
+
 recipes.remove(<appliedenergistics2:material:13>);
 recipes.remove(<appliedenergistics2:material:14>);
 recipes.remove(<appliedenergistics2:material:15>);
@@ -325,6 +326,7 @@ recipes.remove(<appliedenergistics2:material:41>);
 recipes.addShaped(<appliedenergistics2:material:41>, [[null, <appliedenergistics2:material:9>, null], [<ore:stickStainlessSteel>, <appliedenergistics2:part:140>, <ore:stickStainlessSteel>], [null, <ore:stickStainlessSteel>, null]]);
 
 //quartz fiber
+recipes.remove(<appliedenergistics2:part:140>);
 recipes.remove(<appliedenergistics2:part:140>);
 mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:part:140>,<ore:dustCertusQuartz>, <ore:dustGlass>, 200);
 
